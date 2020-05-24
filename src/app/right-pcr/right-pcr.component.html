@@ -3,7 +3,7 @@
     <div class="col-md-6">
         <div class="card" id="content1">
             <i class='fas fa-viruses' style="font-size: 80px;"></i>
-            <h4>Total PCR Test : {{pcrcount}}</h4>
+            <h4>Total PCR Test : {{pcrcount | number:'2.'}}</h4>
         </div>
     </div>
     <div class="col-md-3"></div>
@@ -27,7 +27,7 @@
                 <tbody class="thead-light">
                     <tr *ngFor="let pcr of pcrList">
                         <td class="col1">{{pcr.date}}</td>
-                        <td class="col2">{{pcr.count}}</td>
+                        <td class="col2">{{pcr.count | number:'2.'}}</td>
                     </tr>
 
                 </tbody>

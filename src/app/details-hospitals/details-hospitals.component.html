@@ -18,9 +18,9 @@
                 <tbody class="thead-light">
                     <tr *ngFor="let hospital of hostpitalList">
                         <td class="col1">{{hospital.hospital.name}}</td>
-                        <td class="col2">{{hospital.cumulative_local}}</td>
-                        <td class="col2">{{hospital.cumulative_foreign}}</td>
-                        <td class="col2">{{hospital.cumulative_total}}</td>
+                        <td class="col2">{{hospital.cumulative_local | number:'2.'}}</td>
+                        <td class="col2">{{hospital.cumulative_foreign | number:'2.'}}</td>
+                        <td class="col2">{{hospital.cumulative_total | number:'2.'}}</td>
                     </tr>
 
                 </tbody>
