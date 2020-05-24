@@ -1,0 +1,16 @@
+<div class="row">
+    <div class="col-md-3" style="height: auto;">
+        <button class="btn btn-dark" id="sidebar" (click)=getLocal()><h6>LOCAL NEW UPDATES</h6></button>
+        <button class="btn btn-dark" id="sidebar" (click)=getGlobal()><h6>GLOBAL NEW UPDATES</h6></button>
+        <button class="btn btn-dark" id="sidebar" (click)=getTesting()><h6>PCR TESTING DETAILS</h6></button>
+        <button class="btn btn-dark" id="sidebar" (click)=getDetails()><h6>SEE DETAILS OF PATIENTS WITH HOSPITAL</h6></button>
+    </div>
+    <div class="col-md-9">
+        <h6 class="text-right" style="margin-right: 65px;">last updated : {{updateDate}}</h6>
+        <app-right-local *ngIf="local"></app-right-local>
+        <app-right-global *ngIf="global"></app-right-global>
+        <app-right-pcr *ngIf="testing"></app-right-pcr>
+        <app-details-hospitals *ngIf="details"></app-details-hospitals>
+    </div>
+
+</div>

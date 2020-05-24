@@ -1,0 +1,8 @@
+* {
+    border-radius: 0 !important;
+  }
+#sidebar{
+    width: 100%;
+    height: 28%;
+    border: 2px solid whitesmoke;
+}

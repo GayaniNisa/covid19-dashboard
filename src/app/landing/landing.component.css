@@ -1,0 +1,25 @@
+#left_side{
+    background-color: black;
+    /* padding: 0px; */
+}
+#right_side{
+    /* background-color: gray; */
+    padding: 0px;
+}
+#header_h{
+    color: red;
+    margin-left: 20px;
+    text-align: left;
+    margin-top:30%;
+}
+#header_s{
+    color: red;
+    /* margin-right: 20px; */
+    text-align: right;
+    margin-top: 10px;
+}
+#header_g{
+    color: white;
+    text-align: center;
+    margin-top: 80px;
+}
